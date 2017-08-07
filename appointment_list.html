@@ -1,0 +1,241 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/appointment_list.css">
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+  <script src="scripts/appointment.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
+  <script src="scripts/nav.js"></script>
+
+  <title>Appointments</title>
+
+</head>
+
+<body>
+
+
+      <div class="div1">
+        <p>Hello Admin</p>
+        <p class="logout-button"><a href="login.html">LogOut</a></p>
+        <button class="button" onClick="history.go(-1);return true;">Back</button>
+
+
+
+      </div>
+      <div class="div2">
+          <h2>HOSPITAL MANAGEMENT SYSTEM</h2>
+    </div>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Appointments')">Appointments</button>
+
+        <button class="tablinks" onclick="openCity(event, 'Patients')">Patients</button>
+        <button class="tablinks" onclick="openCity(event, 'Doctors')">Doctors</button>
+
+      </div>
+
+
+
+      <div id="Appointments" class="tabcontent">
+
+
+        <div class="app_child">
+
+          <h1>Appointments List</h1>
+
+          <div class="success"><p class="add_app"> <a href="add_app.html"><strong>Add an new Appointment</strong></a></div></p> <br> <br>
+
+      </div>
+
+
+    <br>
+        <div style="overflow-x:auto;">
+      <table>
+        <tr>
+          <th>S No</th>
+          <th>Patient Name</th>
+          <th>Doctor Name</th>
+          <th>Time</th>
+          <th>Date</th>
+          <th>Options</th>
+
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Mohammad</td>
+          <td>Akib</td>
+          <td>12:00</td>
+          <td>2017-05-02</td>
+          <td><a href="delete.html">Delete</a></td>
+
+
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Ali</td>
+          <td>Akib</td>
+          <td>12:45</td>
+          <td>2017-05-02</td>
+          <td><a href="delete.html">Delete</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Fatema</td>
+          <td>Gupta</td>
+          <td>1:00</td>
+          <td>2017-06-02</td>
+          <td><a href="delete.html">Delete</a></td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td>Virat Kohli</td>
+          <td>Tamim</td>
+          <td>12:00</td>
+          <td>2017-01-02</td>
+          <td><a href="delete.html">Delete</a></td>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>Ronaldo</td>
+          <td>John</td>
+          <td>12:00</td>
+          <td>2017-01-01</td>
+          <td><a href="delete.html">Delete</a></td>
+        </tr>
+      </table>
+    </div>
+      </div>
+
+
+        <div id="Patients" class="tabcontent">
+          <h1>Patients</h1>
+          <div class="app_child">
+            <p class="add_app"> <a href="add_pat.html">Add New Record</a></p> <br> <br>
+
+        </div>
+
+
+      <br>
+          <div style="overflow-x:auto;">
+        <table>
+          <tr>
+            <th>S No</th>
+            <th>Patients Name</th>
+            <th>Sex</th>
+            <th>Options</th>
+
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Mohammad</td>
+            <td>M</td>
+            <td><a href="modify_pat.html">Modify</a> | <a href="delete.html">Delete</a></td>
+
+
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Ali</td>
+            <td>M</td>
+            <td><a href="modify_pat.html">Modify</a> | <a href="delete.html">Delete</a></td>
+
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Fatema</td>
+            <td>F</td>
+            <td><a href="modify_pat.html">Modify</a> | <a href="delete.html">Delete</a></td>
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td>Virat Kohli</td>
+            <td>M</td>
+            <td><a href="modify_pat.html">Modify</a> | <a href="delete.html">Delete</a></td>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>Ronaldo</td>
+            <td>M</td>
+            <td><a href="modify_pat.html">Modify</a> | <a href="delete.html">Delete</a></td>
+          </tr>
+        </table>
+      </div>
+        </div>
+
+
+    <br>
+        <div style="overflow-x:auto;">
+      <table>
+
+      </table>
+    </div>
+</div>
+  </div>
+  </div>
+
+  <div id="Doctors" class="tabcontent">
+    <h2>Doctors</h2>
+    <div class="app_child">
+      <p class="add_app"> <a href="add_doc.html">Add New Record</a></p> <br> <br>
+
+  </div>
+
+
+<br>
+    <div style="overflow-x:auto;">
+  <table>
+    <tr>
+      <th>S No</th>
+      <th>Doctor Name</th>
+      <th>Specialization</th>
+      <th>Options</th>
+
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Mohammad</td>
+      <td>Akib</td>
+      <td><a href="modify_doc.html">Modify</a> | <a href="delete.html">Delete</a></td>
+
+
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Ali</td>
+      <td>Akib</td>
+      <td><a href="modify_doc.html">Modify</a> | <a href="delete.html">Delete</a></td>
+
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Fatema</td>
+      <td>Gupta</td>
+      <td><a href="modify_doc.html">Modify</a> | <a href="delete.html">Delete</a></td>
+    </tr>
+
+    <tr>
+      <td>4</td>
+      <td>Virat Kohli</td>
+      <td>Tamim</td>
+      <td><a href="modify_doc.html">Modify</a> | <a href="delete.html">Delete</a></td>
+    </tr>
+
+    <tr>
+      <td>1</td>
+      <td>Ronaldo</td>
+      <td>John</td>
+      <td><a href="modify_doc.html">Modify</a> | <a href="delete.html">Delete</a></td>
+    </tr>
+  </table>
+</div>
+  </div>
+
+
+</body>
+</html>
